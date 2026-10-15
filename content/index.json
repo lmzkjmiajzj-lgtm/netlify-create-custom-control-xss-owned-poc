@@ -1,0 +1,6 @@
+{
+  "type": "CustomControlProof",
+  "title": "Custom Control XSS Proof",
+  "description": "Owned-account harmless marker",
+  "customControl": "safe"
+}
