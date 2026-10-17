@@ -1,5 +1,5 @@
 {
-  "name": "netlify-create-custom-control-xss-poc",
+  "name": "netlify-create-preview-openlink-xss-poc",
   "version": "1.0.0",
   "private": true,
   "scripts": {

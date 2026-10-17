@@ -1,7 +1,8 @@
 {
-  "id": "netlify-create-custom-control-xss",
-  "finding": "custom-inline-script controlUrl executes in an inherited Create-origin iframe",
-  "marker": "data-netlify-create-custom-control-xss=confirmed",
-  "payload": "harmless DOM marker only",
-  "scope": "owned-account research fixture"
+  "id": "netlify-create-preview-openlink-xss",
+  "finding": "configured preview openLink message reaches window.open without URL-scheme validation",
+  "marker": "data-netlify-create-openlink-xss=confirmed",
+  "payload": "harmless parent DOM marker only",
+  "scope": "owned-account research fixture",
+  "distinctFrom": ["custom-inline-script", "assetSources[].url"]
 }

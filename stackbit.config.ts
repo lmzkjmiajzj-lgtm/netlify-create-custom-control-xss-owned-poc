@@ -15,19 +15,13 @@ export default defineStackbitConfig({
       contentDirs: ['content'],
       models: [{
         type: 'page',
-        name: 'CustomControlProof',
-        label: 'Custom Control XSS Proof',
+        name: 'OpenLinkProof',
+        label: 'Visual Editor openLink proof',
         urlPath: '/',
         filePath: 'content/index.json',
         fields: [
           { name: 'title', type: 'string', required: true },
-          { name: 'description', type: 'text' },
-          {
-            name: 'customControl',
-            type: 'string',
-            controlType: 'custom-inline-script',
-            controlUrl: 'https://create-custom-control-xss-poc-20261015.netlify.app/custom-control.js'
-          }
+          { name: 'description', type: 'text' }
         ]
       }]
     })

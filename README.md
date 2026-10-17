@@ -1,12 +1,12 @@
-# Netlify Create custom-control XSS owned fixture
+# Netlify Create preview openLink XSS owned fixture
 
-Separate harmless proof for the `custom-inline-script` / `controlUrl` path.
-The payload modifies only the top-level Create DOM with a visible marker.
+Separate harmless proof for the configured-preview `openLink` message path.
+After the normal Visual Editor handshake, one button click sends a
+`javascript:` URL to the trusted parent, which currently passes it to
+`window.open` without scheme validation.
 
-- Public host: https://lmzkjmiajzj-lgtm.github.io/netlify-create-custom-control-xss-owned-poc/
-- CORS script host: https://lmzkjmiajzj-lgtm.github.io/netlify-create-custom-control-xss-owned-poc/custom-control.js
-- Marker: `data-netlify-create-custom-control-xss="confirmed"`
-- No cookies, tokens, account data, or network exfiltration are collected.
+- Marker: `data-netlify-create-openlink-xss="confirmed"`
+- No Custom Control or Asset Source is configured on this branch.
+- No cookies, tokens, account data, or network exfiltration are accessed.
 
-The public host alone is inert. Execution occurs only when this owned repository
-is loaded as a Netlify Visual Editor project.
+The public page is inert outside an authorized Visual Editor preview iframe.

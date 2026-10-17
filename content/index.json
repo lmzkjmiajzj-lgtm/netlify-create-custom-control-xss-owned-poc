@@ -1,6 +1,5 @@
 {
-  "type": "CustomControlProof",
-  "title": "Custom Control XSS Proof",
-  "description": "Owned-account harmless marker",
-  "customControl": "safe"
+  "type": "OpenLinkProof",
+  "title": "Visual Editor openLink proof",
+  "description": "Owned-account harmless marker"
 }
